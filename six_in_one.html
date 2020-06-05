@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vacation Rental - Free Bootstrap 4 Template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script>
+
+	$(document).ready(function(){
+
+	 // for 1 st button.
+    $('.algo1').click(function(){
+      $('#algo22,#algo33,#algo44,#algo55,#algo66').hide();
+    });
+    
+    $('.algo1').click(function(){
+      $('#algo11').show();
+      });
+
+
+  //  for 2 nd button.
+    $('.algo2').click(function(){
+      $('#algo11,#algo33,#algo44,#algo55,#algo66').hide();
+    });
+    
+    $('.algo2').click(function(){
+      $('#algo22').show();
+      });
+
+
+    //  for 3 rd button.
+    $('.algo3').click(function(){
+      $('#algo11,#algo22,#algo44,#algo55,#algo66').hide();
+    });
+    
+    $('.algo3').click(function(){
+      $('#algo33').show();
+      });
+
+
+
+    // for 4 thbutton
+     $('.algo4').click(function(){
+      $('#algo11,#algo33,#algo22,#algo55,#algo66').hide();
+    });
+    
+    $('.algo4').click(function(){
+      $('#algo44').show();
+      });
+
+
+
+    //  for 5 th button
+    $('.algo5').click(function(){
+      $('#algo11,#algo33,#algo44,#algo22,#algo66').hide();
+    });
+    
+    $('.algo5').click(function(){
+      $('#algo55').show();
+      });
+
+
+    //  for 6 th button
+    $('.algo6').click(function(){
+      $('#algo11,#algo33,#algo44,#algo55,#algo22').hide();
+    });
+    
+    $('.algo6').click(function(){
+      $('#algo66').show();
+      });
+
+	
+     });
+
+</script>
+
+
+  <style>
+	  #main{
+	  	
+	  	margin-top: 30px;
+	  }
+
+	  #scroll1{
+	  	overflow: scroll;
+	  	height: 700px;
+	  }
+
+	  #scroll2{
+	  	height: 400px;
+	  	overflow: scroll;
+	  	margin: 5px;
+	  }
+
+	  #scroll3{
+	  	margin: 5px;
+	  	height:290px;
+	  	overflow: scroll;
+	  }
+
+	  #collapse11{
+	  	display: none;
+	  }
+
+
+    #algo22{
+      display: none;
+    }
+
+
+    #algo33{
+      display: none;
+    }
+
+    #algo44{
+      display: none;
+    }
+
+    #algo55{
+      display: none;
+    }
+
+    #algo66{
+      display: none;
+    }
+
+
+ </style>
+</head>
+<body>
+
+
+<!-- nav start from here. -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+  	<a class="navbar-brand" href="index.html">GUI-fy<span>ML</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+      	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+      	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      	<li class="nav-item"><a href="rooms.html" class="nav-link">Apartment Room</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav ends here-->
+
+
+
+<div class="container">
+  <div class="row mb-4 mt-4">
+    <div class="col-5 border border-white  pr-2">
+
+      <form class="border rounded shadow mt-4 p-3" >
+
+        <div class="form-group row" >
+          <label class="col-sm-12 col-form-label text-b text-center" style="font-size: 1.6em;
+          border-bottom: 1px solid black; ">Data Sets</label>
+        </div>
+
+        <div class="form-group row mx-auto">
+          <label for="inputState" class="col-4 font font-weight-bold" style="font-size: 1.3em;">Train</label>
+          <textarea class="form-control  col-6" aria-label="With textarea" placeholder="ENTER Whatever"></textarea>
+        </div>
+
+        <div class="form-group row input-group-large">
+          <label for="inputState" class="col-sm-4 font font-weight-bold" style="font-size: 1.3em;">Shuffle</label>
+          <input type="checkbox" class="col-sm-2  align-left  m-2 " id="exampleCheck1" style="height: 18px; width: 18px;">
+        </div>
+
+        <div class="dropdown" >
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width: 80%;">Data Frames
+          <span class="caret"></span>
+          </button>
+
+          <ul class="dropdown-menu" style="width: 80%; text-align: center;">
+            <a tabindex="-1" href="#" class="collapse1"><li>DATA FRAME NO1</li></a>
+            <a tabindex="-1" href="#" class="collapse1"><li>DATA FRAME NO2</li></a>
+            <a tabindex="-1" href="#"><li>DATA FRAME NO3</li></a>
+          </ul>
+        </div>
+
+
+        <div class="form-group row mt-5" style="">
+          <label class="col-sm-12 col-form-label text-b text-center" style="font-size: 1.7em; border-bottom: 1px solid black;">Algorithms</label>
+
+          <button class="btn btn-outline-info mt-5 mx-auto algo1" type="button"  style="width: 80%;">Algorith no. 1
+          </button>
+
+          <button class="btn btn-primary mt-2 mx-auto algo2" type="button"  style="width: 80%;">Algorith no. 2
+          </button>
+
+          <button class="btn btn-primary mt-2 mx-auto algo3" type="button"  style="width: 80%;">Algorith no. 3
+          </button>
+
+          <button class="btn btn-primary mt-2 mx-auto algo4" type="button"  style="width: 80%;">Algorith no. 4
+          </button>
+
+          <button class="btn btn-primary mt-2 mx-auto algo5" type="button"  style="width: 80%;">Algorith no. 5
+          </button>
+
+          <button class="btn btn-primary mt-2 mx-auto algo6" type="button"  style="width: 80%;">Algorith no. 6
+          </button>
+
+        </div>                           
+      </form>
+    </div>
+
+    <div class="col-7 border border-white shadow mt-4">
+
+<!--  this is 1 th right portion -->
+      <div id="algo11">
+      <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+        <div class="form-group row mb-5 mt-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">A1:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">B1:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">C1:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">D1:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">E1:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">F1:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+                                  
+        <div class="modal-footer">
+          <button  class="btn btn-outline-info" type="submit">Train</button>
+        </div>
+      </form>
+      </div>
+<!--  this is 1 th right portion enddddd-->
+
+
+<!--  this is 2 th right portion -->
+      <div id="algo22">
+      <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+        <div class="form-group row mb-5 mt-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">A2:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">B2:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">C2:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">D2:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">E2:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">F2:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+                                  
+        <div class="modal-footer">
+          <button  class="btn btn-outline-info" type="submit">Train</button>
+        </div>
+      </form>
+      </div>
+<!--  this is 2 th right portion enddddd-->
+
+
+<!--  this is 3 th right portion -->
+      <div id="algo33">
+      <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+        <div class="form-group row mb-5 mt-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">A3:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">B3:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">C3:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">D3:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">E3:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">F3:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+                                  
+        <div class="modal-footer">
+          <button  class="btn btn-outline-info" type="submit">Train</button>
+        </div>
+      </form>
+      </div>
+<!--  this is 3 th right portion enddddd-->
+
+
+<!--  this is 4 th right portion -->
+      <div id="algo44">
+      <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+        <div class="form-group row mb-5 mt-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">A4:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">B4:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">C4:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">D4:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">E4:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">F4:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+                                  
+        <div class="modal-footer">
+          <button  class="btn btn-outline-info" type="submit">Train</button>
+        </div>
+      </form>
+      </div>
+<!--  this is 4 th right portion enddddd-->
+
+
+<!--  this is 5 th right portion -->
+      <div id="algo55">
+      <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+        <div class="form-group row mb-5 mt-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">A5:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">B5:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">C5:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">D5:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">E5:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">F5:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+                                  
+        <div class="modal-footer">
+          <button  class="btn btn-outline-info" type="submit">Train</button>
+        </div>
+      </form>
+      </div>
+<!--  this is 5 th right portion enddddd-->      
+
+<!--  this is 6 th right portion -->
+      <div id="algo66">
+      <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+        <div class="form-group row mb-5 mt-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">A6:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">B6:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">C6:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">D6:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">E6:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+
+        <div class="form-group row mb-5">
+          <label for="message-text" class="col-form-label col-4 text-center" style="font-size: 1.3em;">F6:</label>
+          <textarea class="form-control col-7" id="message-text" name="new_img_name"></textarea>
+        </div>
+                                  
+        <div class="modal-footer">
+          <button  class="btn btn-outline-info" type="submit">Train</button>
+        </div>
+      </form>
+      </div>
+<!--  this is 6 th right portion enddddd-->
+
+    </div>
+
+  </div>
+</div>
+
+
+
+  
+	
+<!-- footer start from here -->
+<footer class="footer">
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+			<h2 class="footer-heading"><a href="#" class="logo">Vacation Rental</a></h2>
+			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+			<a href="#">Read more <span class="fa fa-chevron-right" style="font-size: 11px;"></span></a>
+		</div>
+		<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+			<h2 class="footer-heading">Services</h2>
+			<ul class="list-unstyled">
+        <li><a href="#" class="py-1 d-block">Map Direction</a></li>
+        <li><a href="#" class="py-1 d-block">Accomodation Services</a></li>
+        <li><a href="#" class="py-1 d-block">Great Experience</a></li>
+        <li><a href="#" class="py-1 d-block">Perfect central location</a></li>
+      </ul>
+		</div>
+		<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+			<h2 class="footer-heading">Tag cloud</h2>
+			<div class="tagcloud">
+        <a href="#" class="tag-cloud-link">apartment</a>
+        <a href="#" class="tag-cloud-link">home</a>
+        <a href="#" class="tag-cloud-link">vacation</a>
+        <a href="#" class="tag-cloud-link">rental</a>
+        <a href="#" class="tag-cloud-link">rent</a>
+        <a href="#" class="tag-cloud-link">house</a>
+        <a href="#" class="tag-cloud-link">place</a>
+        <a href="#" class="tag-cloud-link">drinks</a>
+      </div>
+		</div>
+		<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+			<h2 class="footer-heading">Subcribe</h2>
+			<form action="#" class="subscribe-form">
+        <div class="form-group d-flex">
+          <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+          <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+      <h2 class="footer-heading mt-5">Follow us</h2>
+      <ul class="ftco-footer-social p-0">
+        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+      </ul>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- footer end here. -->
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+
+    
+  </body>
+</html>

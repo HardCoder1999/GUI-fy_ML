@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vacation Rental - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/animate.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/magnific-popup.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/jquery.timepicker.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+
+		$(document).ready(function(){
+
+		  $('.collapse1').click(function(){
+		    $('#collapse11').hide();
+		  });
+		  
+		  $('.collapse1').click(function(){
+		    $('#collapse11').show();
+		    });
+
+
+      $('.radio1').click(function(){
+        $('#radio22').hide();
+      });
+      
+      $('.radio1').click(function(){
+        $('#radio11').show();
+        });
+
+      $('.radio2').click(function(){
+        $('#radio11').hide();
+      });
+      
+      $('.radio2').click(function(){
+        $('#radio22').show();
+        });
+
+
+
+
+		  $('.dropdown-submenu a.test').on("click", function(e){
+		    $(this).next('ul').toggle();
+		    e.stopPropagation();
+		    e.preventDefault();
+		  });
+		
+	     });
+
+	</script>
+
+
+    <style>
+		  #main{
+		  	
+		  	margin-top: 30px;
+		  }
+
+		  #scroll1{
+		  	overflow: scroll;
+		  	height: 700px;
+		  }
+
+		  #scroll2{
+		  	height: 400px;
+		  	overflow: scroll;
+		  	margin: 5px;
+		  }
+
+		  #scroll3{
+		  	margin: 5px;
+		  	height:290px;
+		  	overflow: scroll;
+		  }
+
+		  #collapse11{
+		  	display: none;
+		  }
+
+      #radio11{
+        display: none;
+      }
+
+      #radio22{
+        display: none;
+      }
+
+
+   </style>
+  </head>
+  <body>
+
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html">GUI-fy<span>ML</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	        	<li class="nav-item"><a href="rooms.html" class="nav-link">Apartment Room</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+  <div class="container-fluid " id="main">
+  	<div class="row ">
+
+      <div class="col-8" style="border-right: 1px black solid;">
+        <div class="row">
+          <div class="col-12" style="overflow: auto; height: 800px;">
+            <h1 class="font-weight-bold">Plotting Area</h1>
+            <img src="static/data_image/{{ fig_name }}">
+          </div>
+        </div>
+
+
+        <!-- Form starts here -->
+        <form method="post" action="/data_visual/{{ plot_name }}/values">
+        <div class="row" style="border-top:1px black solid; border-bottom:1px black solid;">
+
+
+
+          <!-- Column 1 and Column 2 division starts -->
+          <div class="col-md-6 pl-1" style="border-right:1px black solid;">
+
+            
+            <!-- Column 1  section starts -->
+            <div class="row">
+              <div class="col-1"></div>
+
+              <label for="xcolumn" class="col-lg-5 pl-3 mt-3 pt-2 font-weight-bold" style="font-size: 1.25em; color: #fd7792;">X-Column</label>
+
+              <!-- <div class="col-1"></div> -->
+
+              <!-- <textarea class="form-control  col-lg-4 ml-3 mt-3" aria-label="With textarea" placeholder="X Column" name="xcolumn"></textarea> -->
+              <select id="xcolumn" class="form-control col-6" name="xcolumn">
+                <option selected>Choose</option>
+                {% for j in list_of_col: %}
+                <option>{{ j }}</option>
+                {% endfor %}
+              </select>
+              
+            </div>
+            <!-- Column 1 section ends -->
+
+
+            <!-- Column 2 section starts -->
+            <div class="row mb-3">
+              <div class="col-1"></div>
+              
+              <label for="ycolumn" class="col-lg-5 pl-3 mt-3 pt-2 font-weight-bold" style="font-size: 1.25em; color: #fd7792;">Y-Column</label>
+
+              <!-- <div class="col-1"></div> -->
+
+              <!-- <textarea class="form-control  col-lg-4 ml-3 mt-3" aria-label="With textarea" placeholder="Y Column" name="ycolumn"></textarea> -->
+
+              <select id="ycolumn" class="form-control col-6" name="ycolumn">
+                <option selected>Choose</option>
+                {% for j in list_of_col: %}
+                <option>{{ j }}</option>
+                {% endfor %}
+              </select>
+              
+            </div>
+            <!-- Column 2 section ends -->
+          </div>
+          <!-- Column 1 and Column 2 division ends -->
+
+
+
+          <!-- Hue and estimator division starts  -->
+          <div class="col-md-6 pl-1">
+
+            <!-- Hue division starts -->
+            <div class="row">
+              <div class="col-1"></div>
+
+              <label for="hue" class="col-lg-5 pl-3 mt-3 pt-2 font-weight-bold" style="font-size: 1.25em; color: #fd7792;">Hue</label>
+
+              <!-- <div class="col-1"></div> -->
+
+              <!-- <textarea class="form-control  col-lg-4 ml-3 mt-3" aria-label="With textarea" placeholder="Hue Column" name="hue"></textarea> -->
+
+              <select id="hue" class="form-control col-6" name="hue">
+                <option selected>Choose</option>
+                {% for j in list_of_col: %}
+                  <option>{{ j }}</option>
+                {% endfor %}
+              </select>
+              
+            </div>
+            <!-- Hue division ends -->
+
+
+
+            <!-- Estimator division starts -->
+            <div class="row mb-3">
+              <div class="col-1"></div>
+              
+              <label for="estimator" class="col-lg-5 pl-3 mt-3 pt-2 font-weight-bold" style="font-size: 1.25em; color: #fd7792;">Estimator</label>
+
+              <div class="col-1"></div>
+
+              <textarea class="form-control  col-lg-4 ml-3 mt-3" aria-label="With textarea" placeholder="Estimator Value" name="estimator"></textarea>
+              
+            </div>
+            <!-- Estimator division ends -->
+
+
+          </div>
+          <!-- Hue and Estimator division ends -->
+
+
+        </div>
+        <button class="btn btn-primary  mt-2 ml-3 mb-4 p-3" type="submit">Plot Graph</button>
+        </form>
+        <!-- Form ends here -->
+
+      </div>
+
+
+      <!-- DataFrames list section starts -->
+      <div class="col-4">
+        <div class="dropdown ml-2">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width: 80%;">Data Plots
+          <span class="caret"></span>
+          </button>
+
+          <ul class="dropdown-menu" style="width: 80%; text-align: center;overflow:auto">
+            <a tabindex="-1" href="/data_visual/scatter"><li>Scatter Plot</li></a>
+            <a tabindex="-1" href="/data_visual/line"><li>Line Plot</li></a>
+            <a tabindex="-1" href="/data_visual/bar"><li>Bar Plot</li></a>
+            <a tabindex="-1" href="/data_visual/box"><li>Box Plot</li></a>
+            <a tabindex="-1" href="/data_visual/dist"><li>Dist Plot</li></a>
+            <a tabindex="-1" href="/data_visual/point"><li>Point Plot</li></a>
+            <a tabindex="-1" href="/data_visual/count"><li>Count Plot</li></a>
+            <a tabindex="-1" href="/data_visual/violin"><li>Violin Plot</li></a>
+            <a tabindex="-1" href="/data_visual/strip"><li>Strip Plot</li></a>
+            <a tabindex="-1" href="/data_visual/swarm"><li>Swarm Plot</li></a>
+            <a tabindex="-1" href="/data_visual/heatmap"><li>Heatmap</li></a>
+          </ul>
+        </div>
+      </div>
+      <!-- Dataframes list section ends -->
+
+
+
+  	</div>
+  </div>
+	
+
+
+
+  <!-- Footer Section starts -->
+    <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading"><a href="#" class="logo">Vacation Rental</a></h2>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+						<a href="#">Read more <span class="fa fa-chevron-right" style="font-size: 11px;"></span></a>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Services</h2>
+						<ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Map Direction</a></li>
+              <li><a href="#" class="py-1 d-block">Accomodation Services</a></li>
+              <li><a href="#" class="py-1 d-block">Great Experience</a></li>
+              <li><a href="#" class="py-1 d-block">Perfect central location</a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Tag cloud</h2>
+						<div class="tagcloud">
+	            <a href="#" class="tag-cloud-link">apartment</a>
+	            <a href="#" class="tag-cloud-link">home</a>
+	            <a href="#" class="tag-cloud-link">vacation</a>
+	            <a href="#" class="tag-cloud-link">rental</a>
+	            <a href="#" class="tag-cloud-link">rent</a>
+	            <a href="#" class="tag-cloud-link">house</a>
+	            <a href="#" class="tag-cloud-link">place</a>
+	            <a href="#" class="tag-cloud-link">drinks</a>
+	          </div>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Subcribe</h2>
+						<form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </form>
+            <h2 class="footer-heading mt-5">Follow us</h2>
+            <ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+    <!-- Footer section ends -->
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap-datepicker.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.timepicker.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/scrollax.min.js') }}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{ url_for('static', filename = 'js/google-map.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+
+
+    
+  </body>
+</html>
